@@ -1,5 +1,5 @@
 import Phaser from 'phaser';
-import config from '../Config/config';
+import config from '../Config/config.js';
 
 export default class CreditsScene extends Phaser.Scene {
   constructor() {
@@ -30,7 +30,8 @@ export default class CreditsScene extends Phaser.Scene {
       duration: 3000,
       delay: 1000,
       onComplete() {
-        this.destroy;
+        // this.destroy;
+        this.destroy = true;
       },
     });
 

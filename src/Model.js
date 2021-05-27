@@ -1,3 +1,6 @@
+/* eslint no-underscore-dangle: ["error",
+ { "allow": ["_soundOn", "_musicOn", "_bgMusicPlaying"] }] */
+
 export default class Model {
   constructor() {
     this._soundOn = true;
